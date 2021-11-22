@@ -1,0 +1,38 @@
+<%- include('../../fragments/header.ejs') %>
+        <main>
+            <h2>Edytuj klienta</h2>
+            <form class="form">
+                <label for="clientId">Id klienta: <span class="symbol-required">*</span></label>
+                <input type="number" name="clientId" id="clientId" value="1" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="drivingLicenseId">Numer prawa jazdy: <span class="symbol-required">*</span></label>
+                <input type="number" name="drivingLicenseId" id="drivingLicenseId" value="524151" required />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="clientName">Imię: <span class="symbol-required">*</span></label>
+                <input type="text" name="clientName" id="clientName" value="Jakub" required />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="clientSurname">Naziwsko: <span class="symbol-required">*</span></label>
+                <input type="text" name="clientSurname" id="clientSurname" value="Redziński" required />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+                
+                <label for="clientEmail">Email: <span class="symbol-required">*</span></label>
+                <input type="email" name="clientEmail" id="clientEmail" value="kuba.r@gmail.com" required />
+                <span id="errorClientEmail" class="errors-text">Email jest wymagany</span>
+
+                <div>
+                <label>Stały klient: <span class="symbol-required">*</span></label>
+                    <input type="radio" name="choice-radio" >
+                          Tak
+                    <input type="radio" name="choice-radio" checked>
+                          Nie
+                </div>
+                <div>
+                    <a href="statement/client-list-success-edit.html" class="button-add2">Edytuj</a>
+                    <a href="client-list.html" class="button-cancel">Anuluj</a>
+                </div>
+            </form>
+        </main>
+<%- include('../../fragments/footer.ejs') %>

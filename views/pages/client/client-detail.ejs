@@ -1,0 +1,68 @@
+<%- include('../../fragments/header.ejs') %>
+        <main>
+            <h2>Szczegóły klienta</h2>
+            <form class="form">
+                <label for="clientId">Id klienta: <span class="symbol-required">*</span></label>
+                <input type="number" name="clientId" id="clientId" value="1" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="drivingLicenseId">Numer prawa jazdy: <span class="symbol-required">*</span></label>
+                <input type="number" name="drivingLicenseId" id="drivingLicenseId" value="524151" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="clientName">Imię: <span class="symbol-required">*</span></label>
+                <input type="text" name="clientName" id="clientName" value="Jakub" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="clientSurname">Naziwsko: <span class="symbol-required">*</span></label>
+                <input type="text" name="clientSurname" id="clientSurname" value="Redziński" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="clientEmail">Email: <span class="symbol-required">*</span></label>
+                <input type="email" name="clientEmail" id="clientEmail" value="kuba.r@gmail.com" disabled />
+                <span id="errorClientEmail" class="errors-text">Email jest wymagany</span>
+
+                <div>
+                <label>Stały klient: <span class="symbol-required">*</span></label>
+                    <input type="radio" name="choice-radio" disabled>
+                          Tak
+                    <input type="radio" name="choice-radio" disabled checked>
+                          Nie
+                </div>
+                <div>
+                    <a href="client-edit.html" class="button-edit">Edytuj</a>
+                </div>
+            </form>
+            <h2>Szczegóły wynajmu klienta</h2>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>Id wynajmu</th>
+                        <th>Id samochodu</th>
+                        <th>Data rozpoczęcia najmu</th>
+                        <th>Data zakończenia najmu</th>
+                        <th>Cena wynajmu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2021-11-02</td>
+                        <td>2021-11-03</td>
+                        <td>400</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2021-10-21</td>
+                        <td>2021-10-25</td>
+                        <td>800</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="client-list.html" class="button-return">Powrót</a>
+            </div>
+        </main>
+<%- include('../../fragments/footer.ejs') %>

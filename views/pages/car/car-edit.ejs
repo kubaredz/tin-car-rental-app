@@ -1,0 +1,39 @@
+<%- include('../../fragments/header.ejs') %>
+        <main>
+            <h2>Edycja samochodu</h2>
+            <form class="form">
+                <label for="carId">Id samochodu <span class="symbol-required">*</span></label>
+                <input type="number" name="carId" id="carId" value="1" readonly />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="vin">VIN: <span class="symbol-required">*</span></label>
+                <input type="text" name="vin" id="vin" value="1G4AW69N2DH524774" required />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="plateNumber">Numer rejestracyjny: <span class="symbol-required">*</span></label>
+                <input type="text" name="plateNumber" id="plateNumber" value="WE2N303" required />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="company">Marka: <span class="symbol-required">*</span></label>
+                <input type="text" name="company" id="company" value="Bmw" required />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="model">Model: <span class="symbol-required">*</span></label>
+                <input type="text" name="model" id="model" value="118i" required />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="oddometer">Przebieg: <span class="symbol-required">*</span></label>
+                <input type="number" name="oddometer" id="oddometer" value="42000" required />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="vehiclePrice">Cena pojazdu: <span class="symbol-required">*</span></label>
+                <input type="number" name="vehiclePrice" id="vehiclePrice" value="64000" required />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <div>
+                    <a href="statement/car-list-success-edit.html" class="button-add2">Edytuj</a>
+                    <a href="car-detail.html" class="button-cancel">Anuluj</a>
+                </div>
+            </form>
+        </main>
+<%- include('../../fragments/footer.ejs') %>

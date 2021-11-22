@@ -1,0 +1,43 @@
+<%- include('../../fragments/header.ejs') %>
+        <main>
+            <h2>Nowy klient</h2>
+                <form class="form" id="form" name="form" novalidate onsubmit="return validateForm();">
+                    <label for="clientId">Id klienta: <span class="symbol-required">*</span></label>
+                    <input type="number" name="clientId" id="clientId" value="4" required readonly/>
+                
+                    <label for="drivingLicenseId">Numer prawa jazdy: <span class="symbol-required">*</span></label>
+                    <input type="number" name="drivingLicenseId" id="drivingLicenseId" placeholder="2-10 znaków" required/>
+                    <span id="errorDrivingLicenseId" class="errors-text"></span>
+
+                    <label for="clientName">Imię: <span class="symbol-required">*</span></label>
+                    <input type="text" name="clientName" id="clientName" placeholder="2-60 znaków" required/>
+                    <span id="errorClientName" class="errors-text"></span>
+
+                    <label for="clientSurname">Nazwisko: <span class="symbol-required">*</span></label>
+                    <input type="text" name="clientSurname" id="clientSurname" placeholder="2-60 znaków" required/>
+                    <span id="errorClientSurname" class="errors-text"></span>
+                
+                    <label for="clientEmail">Email: <span class="symbol-required">*</span></label>
+                    <input type="email" name="clientEmail" id="clientEmail" placeholder="np nazwa@domena.pl" required/>
+                    <span id="errorClientEmail" class="errors-text"></span>
+
+                    <label>Stały klient: <span class="symbol-required">*</span></label>
+                    <input type="radio" id="patronYes" value="yes" name="patronChoice">
+                    Tak
+                    <input type="radio" id="patronNo" value="no" name="patronChoice">
+                    Nie
+                    <span id="errorClientIsPatron" class="errors-text"></span>
+                    
+                    <div class="form-buttons">
+                        <span id="errorsSummary" class="errors-text"></span>
+                            <form action="statement/client-list-success-add.html">
+                                <input type="submit" class="button-add2" value="Dodaj">
+                            </form>
+                        <!-- <form action="../client/statement/client-list-success-add.html" method="GET" > 
+                            <button type="submit" name="submit" value="Dalej" id="submitClient" class="button-add2">Dodaj</button>
+                        </form> -->
+                        <a href="client-list.html" class="button-cancel">Anuluj</a>
+                    </div>
+                </form>
+            </main>
+<%- include('../../fragments/footer.ejs') %>

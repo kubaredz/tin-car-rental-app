@@ -1,0 +1,76 @@
+<%- include('../../fragments/header.ejs') %>
+        <main>
+            <h2>Lista samochodów</h2>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>Id samochodu</th>
+                        <th>VIN</th>
+                        <th>Numer rejestracyjny</th>
+                        <th>Marka</th>
+                        <th>Model</th>
+                        <th>Przebieg</th>
+                        <th class="hide">Cena pojazdu</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1G4AW69N2DH</td>
+                        <td>WE2N303</td>
+                        <td>Bmw</td>
+                        <td>118i</td>
+                        <td>42000</td>
+                        <td class="hide">64000</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="car-detail" class="list-actions-button-details">Szczegóły</a>
+                                    <a href="car-edit" class="list-actions-button-edit">Edytuj</a>
+                                    <a href="statement/car-list-ask-delete" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1GNDT13W3W2</td>
+                        <td>WA756AA</td>
+                        <td>Audi</td>
+                        <td>s3</td>
+                        <td>51000</td>
+                        <td class="hide">145000</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="car-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                    <a href="car-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                    <a href="statement/car-list-ask-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>JH4KA3250LC</td>
+                        <td>WB757E3</td>
+                        <td>Alfa Romeo</td>
+                        <td>Giulia Quadrifoglio</td>
+                        <td>71000</td>
+                        <td class="hide">315000</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="car-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                    <a href="car-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                    <a href="statement/car-list-ask-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><a href="new-car.html" class="button-add">Dodaj nowy samochód</a></p>
+        </main>
+<%- include('../../fragments/footer.ejs') %>

@@ -1,0 +1,69 @@
+<%- include('../../fragments/header.ejs') %>
+        <main>
+            <h2>Szczegóły samochodu</h2>
+            <form class="form">
+                <label for="id">ID: <span class="symbol-required">*</span></label>
+                <input type="number" name="id" id="id" value="1" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="vin">VIN: <span class="symbol-required">*</span></label>
+                <input type="text" name="vin" id="vin" value="1G4AW69N2DH524774" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="plateNumber">Numer rejestracyjny: <span class="symbol-required">*</span></label>
+                <input type="text" name="plateNumber" id="plateNumber" value="WE2N303" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="company">Marka: <span class="symbol-required">*</span></label>
+                <input type="text" name="company" id="company" value="Bmw" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="model">Model: <span class="symbol-required">*</span></label>
+                <input type="text" name="model" id="model" value="118i" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="oddometer">Przebieg: <span class="symbol-required">*</span></label>
+                <input type="number" name="oddometer" id="oddometer" value="42000" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="vehiclePrice">Cena pojazdu: <span class="symbol-required">*</span></label>
+                <input type="number" name="vehiclePrice" id="vehiclePrice" value="64000" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+                
+                <div>
+                    <a href="car-edit.html" class="button-edit">Edytuj</a>
+                </div>
+            </form>
+            <h2>Szczegóły wynajmu samochodu</h2>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>Id wynajmu</th>
+                        <th>Id klienta</th>
+                        <th>Data rozpoczęcia najmu</th>
+                        <th>Data zakończenia najmu</th>
+                        <th>Cena wynajmu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2021-11-02</td>
+                        <td>2021-11-03</td>
+                        <td>400</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2021-10-21</td>
+                        <td>2021-10-25</td>
+                        <td>800</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="car-list.html" class="button-return">Powrót</a>
+            </div>
+        </main>
+<%- include('../../fragments/footer.ejs') %>

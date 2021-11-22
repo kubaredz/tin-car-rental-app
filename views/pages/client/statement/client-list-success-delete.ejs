@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script type="application/javascript" src="../../../js/validationCommon.js"></script>
+        <link rel="stylesheet" href="../../../css/style.css"/>
+        <title>Wypożyczalnia samochodów SPLIT</title>
+    </head>
+    <body>
+        <header>
+            <h1>Wypożyczalnia samochodów SPLIT</h1>
+            <img src="../../../images/logo.png" alt="Wypozyczalnia samochodow SPLIT">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">Strona główna</a></li>
+                <li><a href="../../car/car-list.html">Samochody</a></li>
+                <li><a href="../../client/client-list.html" class="active">Klienci</a></li>
+                <li><a href="../../rent/rent-list.html">Wynajem</a></li>
+            </ul>
+        </nav>
+        <main>
+            <span class="label success">Sukces, klient został usunięty!</span>
+            <h2>Lista klientów</h2>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>Id klienta</th>
+                        <th>Numer prawa jazdy</th>
+                        <th>Imię</th>
+                        <th>Nazwisko</th>
+                        <th>Stały klient</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>524152</td>
+                        <td>Piotr</td>
+                        <td>Nowak</td>
+                        <td>Tak</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="../client-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                    <a href="../client-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                    <a href="client-list-ask-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>524153</td>
+                        <td>Aleksandra</td>
+                        <td>Nowak</td>
+                        <td>Tak</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="../client-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                    <a href="../client-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                    <a href="client-list-ask-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><a href="../new-client.html" class="button-add">Dodaj nowego klienta</a></p>
+        </main>
+        <footer>
+            Imię, nazwisko, id klienta
+        </footer>       
+    </body>
+</html>

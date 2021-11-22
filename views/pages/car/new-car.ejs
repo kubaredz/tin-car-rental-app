@@ -1,0 +1,41 @@
+<%- include('../../fragments/header.ejs') %>
+        <main>
+            <h2>Nowy samochód</h2>
+            <form class="form" id="form" name="form" novalidate onsubmit="return validateForm();">
+                <label for="carId">Id samochodu: <span class="symbol-required">*</span></label>
+                <input type="number" name="carId" id="carId" value="4" required readonly/>
+
+                <label for="vin">VIN: <span class="symbol-required">*</span></label>
+                <input type="text" name="vin" id="vin" placeholder="17 znaków" required />
+                <span id="errorVin" class="errors-text"></span>
+
+                <label for="plateNumber">Numer rejestracyjny: <span class="symbol-required">*</span></label>
+                <input type="text" name="plateNumber" id="plateNumber" placeholder="4 lub 7 znaków, A-Z 0-9" required />
+                <span id="errorPlateNumber" class="errors-text"></span>
+
+                <label for="company">Marka: <span class="symbol-required">*</span></label>
+                <input type="text" name="company" id="company" placeholder="np: BMW" required />
+                <span id="errorCompany" class="errors-text"></span>
+            
+                <label for="model">Model: <span class="symbol-required">*</span></label>
+                <input type="text" name="model" id="model" placeholder="np: 118i" required />
+                <span id="errorModel" class="errors-text"></span>
+            
+                <label for="oddometer">Przebieg: <span class="symbol-required">*</span></label>
+                <input type="number" name="oddometer" id="oddometer" placeholder="np: 42000" required />
+                <span id="errorOddometer" class="errors-text"></span>
+
+                <label for="vehiclePrice">Cena pojazdu: <span class="symbol-required">*</span></label>
+                <input type="number" name="vehiclePrice" id="vehiclePrice" placeholder="np: 64000 zł" required />
+                <span id="errorVehiclePrice" class="errors-text"></span>
+                
+                <div>
+                    <span id="errorsSummary" class="errors-text"></span>
+                            <form action="statement/car-list-success-add.html">
+                                <input type="submit" class="button-add2" value="Dodaj">
+                            </form>
+                    <a href="car-list.html" class="button-cancel">Anuluj</a>
+                </div>
+            </form>
+        </main>
+<%- include('../../fragments/footer.ejs') %>

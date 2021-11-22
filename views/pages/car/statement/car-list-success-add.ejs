@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script type="application/javascript" src="../../../js/validationCommon.js"></script>
+        <link rel="stylesheet" href="../../../css/style.css"/>
+        <title>Wypożyczalnia samochodów SPLIT</title>
+    </head>
+    <body>
+        <header>
+            <h1>Wypożyczalnia samochodów SPLIT</h1>
+            <img src="../../../images/logo.png" alt="Wypozyczalnia samochodow SPLIT">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../../../index.html">Strona główna</a></li>
+                <li><a href="../car-list.html" class="active">Samochody</a></li>
+                <li><a href="../../client/client-list.html">Klienci</a></li>
+                <li><a href="../../rent/rent-list.html">Wynajem</a></li>
+            </ul>
+        </nav>
+        <main>
+            <span class="label success">Sukces, prawidłowo dodany samochód!</span>
+            <h2>Lista samochodów</h2>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>Id samochodu</th>
+                        <th>VIN</th>
+                        <th>Numer rejestracyjny</th>
+                        <th>Marka</th>
+                        <th>Model</th>
+                        <th>Przebieg</th>
+                        <th class="hide">Cena pojazdu</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1G4AW69N2DH524774</td>
+                        <td>WE2N303</td>
+                        <td>Bmw</td>
+                        <td>118i</td>
+                        <td>42000</td>
+                        <td class="hide">64000</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="../car-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                    <a href="../car-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                    <a href="car-list-success-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1GNDT13W3W2249640</td>
+                        <td>WA756AA</td>
+                        <td>Audi</td>
+                        <td>s3</td>
+                        <td>51000</td>
+                        <td class="hide">145000</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="../car-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                    <a href="../car-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                    <a href="car-list-success-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>JH4KA3250LC002400</td>
+                        <td>WB757E3</td>
+                        <td>Alfa Romeo</td>
+                        <td>Giulia Quadrifoglio</td>
+                        <td>71000</td>
+                        <td class="hide">315000</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="../car-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                    <a href="../car-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                    <a href="car-list-success-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>JH4KA2630HC019837</td>
+                        <td>WE2N303</td>
+                        <td>Fiat</td>
+                        <td>500</td>
+                        <td>9100</td>
+                        <td class="hide">46000</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="../car-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                    <a href="../car-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                    <a href="car-list-success-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><a href="../new-car.html" class="button-add">Dodaj nowy samochód</a></p>
+        </main>
+        <footer>
+            Imię, nazwisko, id klienta
+        </footer>       
+    </body>
+</html>

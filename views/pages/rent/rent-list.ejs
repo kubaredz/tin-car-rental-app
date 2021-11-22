@@ -1,0 +1,76 @@
+<%- include('../../fragments/header.ejs') %>
+        <main>
+            <h2>Lista wynajmów</h2>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>Id wynajmu</th>
+                        <th>Data rozpoczęcia najmu</th>
+                        <th>Data zakończenia najmu</th>
+                        <th>Cena wynajmu</th>
+                        <th>Numer rejestracyjny pojazdu</th>
+                        <th>Numer prawa jazdy</th>
+                        <th>Naziwsko</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2021-11-02</td>
+                        <td>2021-11-03</td>
+                        <td>400</td>
+                        <td>WE2N303</td>
+                        <td>524151</td>
+                        <td>Redziński</td>
+                        <td>
+                            <ul>
+                                <li>
+                                        <a href="rent-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                        <a href="rent-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                        <a href="statement/rent-list-ask-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2021-10-21</td>
+                        <td>2021-10-25</td>
+                        <td>800</td>
+                        <td>WE2N303</td>
+                        <td>524151</td>
+                        <td>Redziński</td>
+                        <td>
+                            <ul>
+                                <li>
+                                        <a href="rent-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                        <a href="rent-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                        <a href="statement/rent-list-ask-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2020-10-21</td>
+                        <td>2020-11-25</td>
+                        <td>4100</td>
+                        <td>WB757E3</td>
+                        <td>524153</td>
+                        <td>Nowak</td>
+                        <td>
+                            <ul>
+                                <li>
+                                        <a href="rent-detail.html" class="list-actions-button-details">Szczegóły</a>
+                                        <a href="rent-edit.html" class="list-actions-button-edit">Edytuj</a>
+                                        <a href="statement/rent-list-ask-delete.html" class="list-actions-button-delete">Usuń</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><a href="new-rent.html" class="button-add">Dodaj nowy wynajem</a></p>
+        </main>
+<%- include('../../fragments/footer.ejs') %>

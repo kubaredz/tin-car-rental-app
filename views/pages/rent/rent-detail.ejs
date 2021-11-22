@@ -1,0 +1,77 @@
+<%- include('../../fragments/header.ejs') %>
+    <main>
+            <h2>Szczegóły wynajmu</h2>
+            <form class="form">
+                <label for="rentId">Id wynajmu: <span class="symbol-required">*</span></label>
+                <input type="number" name="rentId" id="rentId" value="1" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="carId">Id samochodu: <span class="symbol-required">*</span></label>
+                <select name="carId" id="carId" disabled>
+                    <option>--- Wybierz samochód ---</option>
+                    <option value="1" title="Bmw 118i, WE2N303" selected>1</option>
+                    <option value="2" title="Audi s3, WA756AA">2</option>
+                    <option value="3" title="Alfa Romeo Giulia Quadrifoglio, WB757E3">3</option>  
+                </select>
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+
+                <label for="clientId">Id klienta: <span class="symbol-required">*</span></label>
+                <select name="clientId" id="clientId" disabled>
+                    <option>--- Wybierz klienta ---</option>
+                    <option value="1" title="Jakub Redziński" selected>1</option>
+                    <option value="2" title="Piotr Nowak">2</option>
+                    <option value="3" title="Aleksandra Nowak">3</option>
+                </select>
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="rentPrice">Cena wynajmu: <span class="symbol-required">*</span></label>
+                <input type="number" name="rentPrice" id="rentPrice" value="400" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="dateFrom">Data rozpoczęcia najmu: <span class="symbol-required">*</span></label>
+                <input type="date" name="dateFrom" id="dateFrom" value="2021-11-02" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <label for="dateTo">Data zakończenia najmu: </label>
+                <input type="date" name="dateTo" id="dateTo" value="2021-11-03" disabled />
+                <span id="errorText" class="errors-text">To pole jest wymagane</span>
+
+                <div>
+                    <a href="rent-edit.html" class="button-edit">Edytuj</a>
+                </div>
+            </form>
+            <h2>Szczegóły wynajmu</h2>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>Id wynajmu</th>
+                        <th>Id samochodu</th>
+                        <th>Id klienta</th>
+                        <th>Cena wynajmu</th>
+                        <th>Data rozpoczęcia najmu</th>
+                        <th>Data zakończenia najmu</th>
+                        <th>Numer rejestracyjny pojazdu</th>
+                        <th>Numer prawa jazdy</th>
+                        <th>Naziwsko</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>400</td>
+                        <td>2021-11-02</td>
+                        <td>2021-11-03</td>
+                        <td>WE2N303</td>
+                        <td>524151</td>
+                        <td>Redziński</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="rent-list.html" class="button-return">Powrót</a>
+            </div>
+        </main>
+<%- include('../../fragments/footer.ejs') %>
